@@ -1,10 +1,10 @@
 # === Node.js ===
 node_modules/
 .env
+package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
 
 # === Express.js uploads ===
 uploads/
@@ -19,16 +19,14 @@ public/js/*.min.js
 Thumbs.db
 
 # === Logs ===
-logs
+logs/
 *.log
 *.log.*
 
-# === Vscode ===
+# === VSCode ===
 .vscode/
 
-# === Coverage / tests ===
+# === Test Coverage ===
 coverage/
 .nyc_output/
-node_modules/
-.env
-uploads/
+
