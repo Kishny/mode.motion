@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="jadeTitle">Jade – Book Modèle | Mode & Motion</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="salma-page">
+    <!-- Barre de navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo de l'agence" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Accueil</a>
+        <a href="girl.html" data-i18n="navWomen">Femmes</a>
+        <a href="men.html" data-i18n="navMen">Hommes</a>
+        <a href="about.html" data-i18n="navAbout">À propos</a>
+        <a href="candidature.html" data-i18n="navApply">Candidature</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="language-select">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="book-modele fade-in">
+      <h2>Jade</h2>
+      <p class="infos-modele" data-i18n="jadeInfo">24 ans – Lyon</p>
+
+      <div class="book-gallery">
+        <img src="./img-modeles/jade1.png" alt="Jade – portrait studio" />
+        <img src="./img-modeles/jade1.png" alt="Jade – profil défilé" />
+        <img src="./img-modeles/jade2.png" alt="Jade – extérieur urbain" />
+        <img src="./img-modeles/jade3.png" alt="Jade – en mouvement" />
+        <img src="./img-modeles/jade4.png" alt="Jade – en mouvement" />
+      </div>
+
+      <div class="retour">
+        <a href="girl.html" data-i18n="backToWomen"
+          >← Retour aux modèles femmes</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Mode & Motion" />
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="navHome">Accueil</a></li>
+              <li><a href="girl.html" data-i18n="navWomen">Femmes</a></li>
+              <li><a href="men.html" data-i18n="navMen">Hommes</a></li>
+              <li><a href="about.html" data-i18n="navAbout">À propos</a></li>
+              <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 data-i18n="footerUsefulLinks">Liens utiles</h4>
+            <ul>
+              <li>
+                <a href="candidature.html" data-i18n="navApply"
+                  >Devenir modèle</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="privacyPolicy"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li><a href="#" data-i18n="legalNotice">Mentions légales</a></li>
+              <li><a href="#">CGU</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 data-i18n="footerFollowUs">Suivez-nous</h4>
+            <div class="footer-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <p data-i18n="footerCopyright">
+          &copy; 2025 Mode & Motion. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

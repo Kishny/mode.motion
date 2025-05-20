@@ -1,0 +1,34 @@
+# === Node.js ===
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# === Express.js uploads ===
+uploads/
+
+# === Build / Optimisation output ===
+public/img-webp/
+public/styles/*.min.css
+public/js/*.min.js
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+logs
+*.log
+*.log.*
+
+# === Vscode ===
+.vscode/
+
+# === Coverage / tests ===
+coverage/
+.nyc_output/
+node_modules/
+.env
+uploads/

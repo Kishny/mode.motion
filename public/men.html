@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="titleMen">Modèles Hommes – Mode & Motion</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="men-page">
+    <!-- Barre de navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo de l'agence" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Accueil</a>
+        <a href="girl.html" data-i18n="navWomen">Femmes</a>
+        <a href="men.html" class="active" data-i18n="navMen">Hommes</a>
+        <a href="about.html" data-i18n="navAbout">À propos</a>
+        <a href="candidature.html" data-i18n="navApply">Candidature</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="language-select">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="modele-men fade-in">
+      <h2 data-i18n="menTitle">Modèles Hommes</h2>
+
+      <div class="modele-grid">
+        <a href="modele-lucas.html" class="modele">
+          <img src="images/lucas.png" alt="Lucas" />
+          <div class="modele-info">
+            <h4>Lucas</h4>
+            <p data-i18n="lucasInfo">23 ans - Paris</p>
+          </div>
+        </a>
+        <a href="modele-noah.html" class="modele">
+          <img src="images/noah.png" alt="Noah" />
+          <div class="modele-info">
+            <h4>Noah</h4>
+            <p data-i18n="noahInfo">25 ans - Lyon</p>
+          </div>
+        </a>
+
+        <a href="modele-milan.html" class="modele">
+          <img src="images/milan.png" alt="Milan" />
+          <div class="modele-info">
+            <h4>Milan</h4>
+            <p data-i18n="milanInfos">30 ans - Nice</p>
+          </div>
+        </a>
+        <a href="modele-mohamed.html" class="modele">
+          <img src="images/mohamed.png" alt="Mohamed" />
+          <div class="modele-info">
+            <h4>Mohamed</h4>
+            <p data-i18n="mohamedInfo">28 ans - Marseille</p>
+          </div>
+        </a>
+
+        <a href="modele-adam.html" class="modele">
+          <img src="images/adam.png" alt="Adam" />
+          <div class="modele-info">
+            <h4>Adam</h4>
+            <p data-i18n="adamInfo">26 ans - Bordeaux</p>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Mode & Motion" />
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footerNavigation">Navigation</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="navHome">Accueil</a></li>
+              <li><a href="men.html" data-i18n="navMen">Hommes</a></li>
+              <li><a href="girl.html" data-i18n="navWomen">Femmes</a></li>
+              <li><a href="about.html" data-i18n="navAbout">À propos</a></li>
+              <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerUsefulLinks">Liens utiles</h4>
+            <ul>
+              <li>
+                <a href="candidature.html" data-i18n="navApply"
+                  >Devenir modèle</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="privacyPolicy"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li><a href="#" data-i18n="legalNotice">Mentions légales</a></li>
+              <li><a href="#">CGU</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerFollowUs">Suivez-nous</h4>
+            <div class="footer-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p data-i18n="footerCopyright">
+          &copy; 2025 Mode & Motion. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

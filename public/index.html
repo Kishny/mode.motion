@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="titleHome">Mode & Motion</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo de l'agence" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active" data-i18n="navHome">Accueil</a>
+        <a href="girl.html" data-i18n="navWomen">Femmes</a>
+        <a href="men.html" data-i18n="navMen">Hommes</a>
+        <a href="about.html" data-i18n="navAbout">À propos</a>
+        <a href="candidature.html" data-i18n="navApply">Candidature</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="language-select">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Section couverture -->
+    <section class="hero">
+      <div class="hero-logo">
+        <img
+          src="images/logo.png"
+          alt="Logo Mode & Motion"
+          class="logo-overlay"
+        />
+      </div>
+    </section>
+
+    <!-- Derniers Modèles -->
+    <section class="dernier-modeles">
+      <h2 data-i18n="homeLatestModels">Nos Derniers Modèles</h2>
+      <div class="grid-modeles">
+        <div class="modele-card" onclick="location.href='modele-jade.html'">
+          <img src="images/jade.png" alt="Jade" />
+          <p>Jade</p>
+        </div>
+        <div class="modele-card" onclick="location.href='modele-lucas.html'">
+          <img src="images/lucas.png" alt="Lucas" />
+          <p>Lucas</p>
+        </div>
+        <div class="modele-card" onclick="location.href='modele-salma.html'">
+          <img src="images/salma.png" alt="Salma" />
+          <p>Salma</p>
+        </div>
+        <div class="modele-card" onclick="location.href='modele-noah.html'">
+          <img src="images/noah.png" alt="Noah" />
+          <p>Noah</p>
+        </div>
+        <div class="modele-card" onclick="location.href='modele-alyah.html'">
+          <img src="images/alyah.png" alt="Alyah" />
+          <p>Alyah</p>
+        </div>
+      </div>
+
+      <div class="btn-modeles">
+        <a href="girl.html" data-i18n="seeMoreModels">Voir plus de modèles</a>
+      </div>
+    </section>
+
+    <!-- Événements -->
+    <section class="evenements">
+      <h2 data-i18n="eventsTitle">Événements</h2>
+      <div class="evenements-list">
+        <div class="event-card">
+          <h3 data-i18n="eventTitleParis">📍 Paris</h3>
+          <p class="date" data-i18n="eventDateParis">Samedi 4 Mai 2025</p>
+          <p class="description" data-i18n="eventParis">
+            Casting ouvert pour modèles femmes & hommes (18-30 ans). Tenue sobre
+            exigée. RDV 14h au Studio Mode & Motion.
+          </p>
+        </div>
+
+        <div class="event-card">
+          <h3 data-i18n="eventTitleGeneve">📍 Genève</h3>
+          <p class="date" data-i18n="eventDateGeneve">Dimanche 12 Mai 2025</p>
+          <p class="description" data-i18n="eventGeneve">
+            Shooting promo avec photographe international. Candidatures en ligne
+            seulement. Dress code : chic urbain.
+          </p>
+        </div>
+
+        <div class="event-card">
+          <h3 data-i18n="eventTitleBruxelles">📍 Bruxelles</h3>
+          <p class="date" data-i18n="eventDateBruxelles">
+            Mercredi 22 Mai 2025
+          </p>
+          <p class="description" data-i18n="eventBruxelles">
+            Casting influenceurs & mannequins junior pour partenariat mode. RDV
+            à 11h – Studio 9.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réseaux sociaux -->
+    <section class="suivez-nous">
+      <h2 data-i18n="followUs">Suivez-nous</h2>
+      <p data-i18n="followText">
+        Restez connectés avec l’univers de Mode & Motion
+      </p>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
+
+    <hr class="footer-separator" />
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Maison Panthera" />
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footerNavigation">Navigation</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="navHome">Accueil</a></li>
+              <li><a href="men.html" data-i18n="navMen">Hommes</a></li>
+              <li><a href="girl.html" data-i18n="navWomen">Femmes</a></li>
+              <li><a href="about.html" data-i18n="navAbout">À propos</a></li>
+              <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerUsefulLinks">Liens utiles</h4>
+            <ul>
+              <li>
+                <a href="candidature.html" data-i18n="navApply"
+                  >Devenir modèle</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="privacyPolicy"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li><a href="#" data-i18n="legalNotice">Mentions légales</a></li>
+              <li><a href="#">CGU</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerFollowUs">Suivez-nous</h4>
+            <div class="footer-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <p data-i18n="footerCopyright">
+          &copy; 2025 Mode & Motion. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <!-- RGPD / Cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+      <p data-i18n="cookieText">
+        Ce site utilise des cookies pour vous garantir la meilleure expérience.
+        <a href="#">En savoir plus</a>
+      </p>
+      <div class="cookie-buttons">
+        <button id="accept-cookies" data-i18n="cookieAccept">Accepter</button>
+        <button id="reject-cookies" data-i18n="cookieReject">Refuser</button>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

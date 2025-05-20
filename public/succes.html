@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="successTitle">Candidature envoyée – Mode & Motion</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="fade-in">
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo Maison Panthera" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Accueil</a>
+        <a href="girl.html" data-i18n="navWomen">Femmes</a>
+        <a href="men.html" data-i18n="navMen">Hommes</a>
+        <a href="about.html" data-i18n="navAbout">À propos</a>
+        <a href="candidature.html" data-i18n="navApply">Candidature</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="language-select">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="confirmation-page">
+      <h2 data-i18n="successMessage">Merci pour votre candidature !</h2>
+      <p data-i18n="successText">
+        Nous vous contacterons prochainement si votre profil correspond à nos
+        besoins.
+      </p>
+      <p class="redirect-msg">
+        Vous allez être redirigé vers la page d’accueil dans 15 secondes...
+      </p>
+
+      <a href="index.html" class="btn-home" data-i18n="backHome"
+        >← Retour à l'accueil</a
+      >
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo.png" alt="Maison Panthera" />
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footerNavigation">Navigation</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="men.html">Hommes</a></li>
+              <li><a href="girl.html">Femmes</a></li>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerFollowUs">Suivez-nous</h4>
+            <div class="footer-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p data-i18n="footerCopyright">
+          © 2025 Mode & Motion. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script>
+      setTimeout(() => {
+        alert("Redirection vers la page d'accueil");
+        window.location.href = "index.html";
+      }, 3000);
+    </script>
+  </body>
+</html>

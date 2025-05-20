@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="titleCandidature">Candidature – Mode & Motion</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo de l'agence" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Accueil</a>
+        <a href="girl.html" data-i18n="navWomen">Femmes</a>
+        <a href="men.html" data-i18n="navMen">Hommes</a>
+        <a href="about.html" data-i18n="navAbout">À propos</a>
+        <a href="candidature.html" class="active" data-i18n="navApply"
+          >Candidature</a
+        >
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switcher">
+        <select id="language-select">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Section Candidature -->
+    <section class="candidature">
+      <h2 data-i18n="formTitle">Postulez chez Mode & Motion</h2>
+      <p data-i18n="formIntro">
+        Remplissez le formulaire ci-dessous pour soumettre votre candidature.
+      </p>
+
+      <form id="candidature-form" enctype="multipart/form-data">
+        <div class="form-group">
+          <input
+            type="text"
+            name="prenom"
+            data-i18n-placeholder="formFirstname"
+            required
+          />
+          <input
+            type="text"
+            name="nom"
+            data-i18n-placeholder="formLastname"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="number"
+            name="age"
+            data-i18n-placeholder="formAge"
+            required
+          />
+          <select name="sexe" required>
+            <option value="" data-i18n="formGender">Sexe</option>
+            <option value="femme" data-i18n="formWoman">Femme</option>
+            <option value="homme" data-i18n="formMan">Homme</option>
+            <option value="autre" data-i18n="formOther">Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            data-i18n-placeholder="formEmail"
+            required
+          />
+          <input
+            type="tel"
+            name="telephone"
+            data-i18n-placeholder="formPhone"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            name="instagram"
+            data-i18n-placeholder="formInsta"
+          />
+        </div>
+
+        <div class="form-group file-upload">
+          <label for="photos" class="custom-upload" data-i18n="uploadLabel">
+            Ajouter des fichiers
+          </label>
+          <input
+            type="file"
+            id="photos"
+            name="photos"
+            accept="image/*"
+            multiple
+            required
+            style="display: none"
+          />
+        </div>
+
+        <button type="submit" data-i18n="formSubmit">
+          Envoyer ma candidature
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Mode & Motion" />
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 data-i18n="footerNavigation">Navigation</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="navHome">Accueil</a></li>
+              <li><a href="men.html" data-i18n="navMen">Hommes</a></li>
+              <li><a href="girl.html" data-i18n="navWomen">Femmes</a></li>
+              <li><a href="about.html" data-i18n="navAbout">À propos</a></li>
+              <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerUsefulLinks">Liens utiles</h4>
+            <ul>
+              <li>
+                <a href="candidature.html" data-i18n="navApply"
+                  >Devenir modèle</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="privacyPolicy"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li><a href="#" data-i18n="legalNotice">Mentions légales</a></li>
+              <li><a href="#">CGU</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footerFollowUs">Suivez-nous</h4>
+            <div class="footer-socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p data-i18n="footerCopyright">
+          &copy; 2025 Mode & Motion. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+    <div id="success-toast" class="success-toast hidden">
+      <p>✅ Merci pour votre candidature !</p>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

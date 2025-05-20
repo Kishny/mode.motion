@@ -1,0 +1,30 @@
+{
+  "name": "mode & motion",
+  "version": "1.0.0",
+  "description": "Site de book pour agence de mannequins",
+  "main": "server.js",
+  "author": "Jean",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.2"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "imagemin": "^9.0.1",
+    "imagemin-cli": "^8.0.0",
+    "imagemin-webp": "^8.0.0",
+    "nodemon": "^3.1.9",
+    "uglify-js": "^3.19.3"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "npx cleancss -o public/styles/style.min.css public/styles/style.css && npx uglifyjs public/js/main.js -o public/js/main.min.js && npx imagemin public/img/* --plugin=webp --out-dir=public/img-webp",
+    "optimize": "npm run build && node server.js"
+  }
+}
