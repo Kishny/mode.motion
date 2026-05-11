@@ -143,20 +143,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-/* ========== TRADUCTION DE LA DATE ========== */
-const lang = localStorage.getItem("lang") || "fr";
-fetch(`./lang/${lang}.json`)
-  .then((res) => res.json())
-  .then((data) => {
-    const d = new Date("2025-05-04");
-    const day = data.days[d.getDay()];
-    const month = data.months[d.getMonth()];
-    const dateStr = data.dateFormat
-      .replace("{{day}}", day)
-      .replace("{{date}}", d.getDate())
-      .replace("{{month}}", month)
-      .replace("{{year}}", d.getFullYear());
-
-    const dateEl = document.querySelector(".date");
-    if (dateEl) dateEl.textContent = dateStr;
-  });

@@ -7,6 +7,6 @@ services:
     startCommand: "node server.js"
     envVars:
       - key: MONGODB_URI
-        value: "mongodb+srv://contactjeykodev:Kendy%40nn0122@cluster01.62n2pyv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01"
+        sync: false
       - key: PORT
         value: "5002"
